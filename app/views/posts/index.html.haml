@@ -1,1 +1,3 @@
-%h1 Just a placeholder
+-@posts.each do |post|
+%h2= link_to post.title, post
+= link_to "Share something interesting", new_post_path
